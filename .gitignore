@@ -10,3 +10,9 @@ var/
 npm-debug.log
 yarn-error.log
 ###< symfony/webpack-encore-bundle ###
+
+package-lock.json
+package.json
+docker-compose.yml
+Dockerfile
+webpack.config.js
