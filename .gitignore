@@ -13,6 +13,6 @@ yarn-error.log
 
 package-lock.json
 package.json
-docker-compose.yml
-Dockerfile
+# docker-compose.yml
+# Dockerfile
 webpack.config.js
