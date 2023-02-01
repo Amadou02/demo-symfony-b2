@@ -1,6 +1,6 @@
 FROM php:8.2-apache
 
-ENV APP_ENV=dev
+ENV APP_ENV=prod
 
 # Installation de Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
@@ -31,7 +31,7 @@ RUN touch .env \
     && cp .env.example .env
 
 # RUN composer install --no-dev --prefer-dist --no-interaction \
-RUN composer install --no-interaction \
+RUN composer install --no-dev --no-interaction \
     && composer dump-autoload
 
 # Création des fichiers de cache et définition des permissions
